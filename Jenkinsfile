@@ -10,7 +10,7 @@ pipeline {
 		
 		stage('Build Docker Image') {
 			steps {
-				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'dockerhub', usernameVariable: 'dockerwebtraining', passwordVariable: 'My1docker@ccount']]){
+				docker login --username dockerwebtraining --password My1docker@ccount{
 					sh '''
 						docker build -t manasamithra/capstone .
 					'''
