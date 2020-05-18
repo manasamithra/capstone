@@ -10,7 +10,7 @@ pipeline {
 		
 		stage('Build Docker Image') {
 			steps {
-				docker login --username dockerwebtraining --password My1docker@ccount{
+				docker login --username dockerwebtraining --password-stdin{
 					sh '''
 						docker build -t manasamithra/capstone .
 					'''
