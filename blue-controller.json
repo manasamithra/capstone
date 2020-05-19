@@ -22,7 +22,7 @@
             "containers":[
                {
                   "name":"blue",
-                  "image":"manasamithra/capstone",
+                  "image":"dockerwebtraining/capstone",
                   "ports":[
                      {
                         "name":"http-server",
